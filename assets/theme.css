@@ -1,0 +1,48 @@
+/* The Power Systems Laboratory's page, over glance.css: the colours of power.ece.auth.gr (dark grey #1e1e1e,
+   green #138604, light grey #f6f6f6), with the same Manrope type. */
+
+:root {
+  --brand-950: #0b2208;
+  --brand-900: #10380b;
+  --brand-800: #0f6a03;
+  --brand-700: #138604;
+  --brand-500: #4fa63f;
+  --brand-300: #93cf86;
+  --brand-200: #c3e5bb;
+  --brand-100: #e5f3e1;
+  --amber: #b9740b;
+  --slate: #3f4542;
+  --ink: #1e1e1e;
+  --text: #333333;
+  --muted: #5f6267;
+  --line: #e4e7e3;
+  --land: #e7eae6;
+  --surface: #f6f6f6;
+}
+
+.hero {
+  background:
+    radial-gradient(60% 80% at 82% 78%, rgba(19, 134, 4, 0.40) 0%, rgba(19, 134, 4, 0) 70%),
+    linear-gradient(160deg, #141414 0%, #1e1e1e 100%);
+}
+.kpi-icon { color: var(--brand-300); }
+.card { box-shadow: 0 1px 2px rgba(30, 30, 30, 0.04), 0 10px 30px rgba(30, 30, 30, 0.05); }
+.map-tip { box-shadow: 0 6px 20px rgba(30, 30, 30, 0.16); }
+
+/* research topics: the fields of unit.toml */
+.field-operation h3 { color: var(--brand-800); }
+.field-operation .hbar-fill { background: var(--brand-800); }
+.field-grids h3 { color: var(--amber); }
+.field-grids .hbar-fill { background: var(--amber); }
+.field-dynamics h3 { color: var(--slate); }
+.field-dynamics .hbar-fill { background: var(--slate); }
+
+/* the lighter map classes (the darker ones follow --brand-*) */
+.c0, .swatch.c0, .chart-map path.c0 { fill: #d8eed2; background: #d8eed2; }
+.c1, .swatch.c1, .chart-map path.c1 { fill: #a5d699; background: #a5d699; }
+
+/* publishers and the funding ring: greys and amber instead of the School's blues */
+.p2, .swatch.p2 { background: var(--slate); }
+.p4, .swatch.p4 { background: #8b908c; }
+.p6, .swatch.p6 { background: var(--amber); }
+.chart-ring.ring-funded .ring-fill { stroke: var(--amber); }
